@@ -26,7 +26,7 @@ I made two plotting methods for this project as well. One visualises how perform
 
 The model only made a single error on the test set which resulted in roughly 92% accuracy. For a small dataset and a relatively simple algorithm, that's not terrible at all.
 
-One interesting discussion I had with my boyfriend was about the time complexity of KNN. At first we were throwing around the idea that it might be O(n²), which sounds reasonable when all you think about is distance calculations. But after breaking it down properly, we realised that's not really what's happening.
+One interesting discussion was about the time complexity of KNN. At first we were throwing around the idea that it might be O(n²), which sounds reasonable when all you think about is distance calculations. But after breaking it down properly, we realised that's not really what's happening.
 
 For every test point, the algorithm calculates distances to all training points across all dimensions, giving a complexity of O(m * n * d), where m is the number of test samples, n is the number of training samples and d is the number of features.
 
