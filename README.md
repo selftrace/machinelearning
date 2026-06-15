@@ -32,7 +32,7 @@ For every test point, the algorithm calculates distances to all training points 
 
 If you're only predicting a single point then m becomes 1, which simplifies things down to O(n * d). Still not amazing for huge datasets, but definitely better than the O(n²) assumption we initially had.
 
-That's kind of the trade-off with KNN. Training is basically free because the model just stores the data, but prediction gets more expensive as the dataset grows. Not exactly something you'd want on a massive dataset, but for smaller datasets or situations where data changes frequently, it's actually pretty practical.
+That's kind of the trade-off with KNN. Training is basically free because the model just stores the data, but prediction gets more expensive as the dataset grows. Not exactly something you'd want on a massive dataset, but for smaller datasets or situations where data changes frequently, it's actually practical.
 
 Out of everything in this project, implementing the k-fold cross validation logic was probably the most enjoyable part. Finding the best k value, seeing how performance changed across folds, and then comparing that against the final predictions was a lot more satisfying than I expected. Also the optimal k wasn't absurdly large, which is good because at some point you're basically asking the model to underfit itself into oblivion.
 
