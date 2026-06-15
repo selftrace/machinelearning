@@ -101,7 +101,6 @@ class Training:
         plot.show()
 
 
-
 if __name__ == "__main__":
     """
     x -> features
