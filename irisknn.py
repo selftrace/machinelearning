@@ -134,7 +134,6 @@ class KNN:
 
 
 
-
 if __name__ == "__main__":
     raw_data: IrisDataset = IrisDataset.process()
     x_train, x_test, y_train, y_test = raw_data.split()
