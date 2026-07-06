@@ -29,7 +29,6 @@ tf_model.fit(
     verbose=1
 )
 
-
 num_samples = 5
 sample_imgs = x_test[:num_samples]
 probs = tf.nn.softmax(tf_model.predict(sample_imgs)).numpy()
